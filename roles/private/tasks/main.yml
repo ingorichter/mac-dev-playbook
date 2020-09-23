@@ -1,0 +1,4 @@
+- name: Clone dotfiles
+  import_tasks: dotfiles.yml
+  tags:
+  - dotfiles

@@ -1,0 +1,90 @@
+---
+download: ~/.ansible-downloads
+
+configure_dotfiles: yes
+
+# https://github.com/ingorichter/dotfiles
+dotfiles_repo: ingorichter/dotfiles
+dotfiles_dir: "{{ ansible_user_dir }}/.dotfiles"
+cargo_bin: "{{ ansible_user_dir }}/.cargo/bin"
+
+homebrew_taps:
+  - homebrew/core
+  - homebrew/cask
+  - homebrew/cask-fonts
+  - homebrew/cask-drivers
+  - rs/tap
+
+homebrew_installed_packages:
+  # - dotfiles
+  - bat
+  - curlie
+  - diff-so-fancy
+  - fdupes
+  - go
+  - gpg
+  - hugo
+  - htop
+  - jq
+  - rbenv
+  - rg
+  - rustup-init
+  - shellcheck
+  - tmux
+  - tree
+  - yubikey-personalization
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  - 1password6
+  - adobe-creative-cloud
+  - aerial
+  - alacritty
+  - alfred
+  - alt-tab
+  - bitwarden
+  - double-commander
+  - emacs
+  - font-consolas-for-powerline
+  - font-fira-code
+  - grammarly
+  - keybase
+  - keycastr
+  - libreoffice
+  - licecap
+  - mactex
+  - nextcloud
+  - ngrok
+  - nordvpn
+  - openscad
+  - osxfuse
+  - prusaslicer
+  - rectangle
+  - signal
+  - skype
+  - sonos
+  - sourcetree
+  - spotify
+  - superduper
+  - superproductivity
+  - suspicious-package
+  - synology-drive
+  - telegram-desktop
+  - veracrypt
+  - visual-studio-code-insiders
+  - vivaldi
+  - vmware-fusion
+  - webstorm
+  - webtorrent
+
+mas_email: ""
+mas_password: ""
+mas_installed_apps:
+  - { id: 411643860, name: "DaisyDisk" }
+  - { id: 1470584107, name: "Dato" }
+  - { id: 1176895641, name: "Spark" }
+
+cargo_prefix: "{{ ansible_user_dir }}/.cargo"
+
+# Where to drop the downloaded installer.
+cargo_tmp: "{{ lookup('env', 'TMPDIR') }}"

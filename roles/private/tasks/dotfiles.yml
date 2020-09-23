@@ -1,0 +1,15 @@
+- name: Check if dot tool is already installed
+  stat: path="{{ cargo_bin }}/dot"
+  register: dot
+
+- name: Install dot to manage dotfiles
+  when: dot.stat.exists == false
+  shell: "{{ cargo_bin }}/cargo install --git https://github.com/ubnt-intrepid/dot.git"
+
+- name: Check if ~/.dotfiles is already there
+  stat: path="{{ dotfiles_dir }}"
+  register: df
+
+- name: Init dotfiles from repo
+  when: df.stat.exists == false
+  shell: dot init {{ dotfiles_repo }}

@@ -2,3 +2,4 @@
 - name: geerlingguy.homebrew
 - name: geerlingguy.mas
 - name: robertdebock.cargo
+- name: gantsign.oh-my-zsh

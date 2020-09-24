@@ -16,23 +16,27 @@ homebrew_taps:
   - rs/tap
 
 homebrew_installed_packages:
-  # - dotfiles
   - bat
   - curlie
   - diff-so-fancy
   - fdupes
+  - fzf
   - go
   - gpg
   - hugo
   - htop
   - jq
+  - newsboat
   - rbenv
   - rg
+  - pyenv-virtualenv
   - rustup-init
   - shellcheck
   - tmux
   - tree
   - yubikey-personalization
+  - zplug
+  - zsh
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
@@ -88,3 +92,11 @@ cargo_prefix: "{{ ansible_user_dir }}/.cargo"
 
 # Where to drop the downloaded installer.
 cargo_tmp: "{{ lookup('env', 'TMPDIR') }}"
+
+pip_packages:
+  - name: powerline-shell
+    state: present
+
+oh_my_zsh_install: yes
+users:
+  - username: ingorichter

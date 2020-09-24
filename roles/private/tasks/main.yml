@@ -2,3 +2,8 @@
   import_tasks: dotfiles.yml
   tags:
   - dotfiles
+
+- name: Install Extras
+  import_tasks: extras.yml
+  tags:
+  - extras

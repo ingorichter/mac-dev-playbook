@@ -7,3 +7,8 @@
   import_tasks: extras.yml
   tags:
   - extras
+
+- name: Install tmux plugin manager
+  import_tasks: tmux-plugin-manager.yml
+  tags:
+  - tmpm

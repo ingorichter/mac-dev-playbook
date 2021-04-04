@@ -1,0 +1,13 @@
+- name: Install Fonts
+  community.general.homebrew_cask:
+    name:
+    - font-fira-mono-for-powerline
+    - font-3270
+    - font-3270-nerd-font
+    - font-bahnschrift
+    - font-consolas-for-powerline
+    - font-digital-numbers
+    - font-fira-code
+    - font-fira-mono-for-powerline
+
+    state: present

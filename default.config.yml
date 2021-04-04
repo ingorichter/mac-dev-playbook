@@ -6,7 +6,11 @@ configure_dotfiles: yes
 # https://github.com/ingorichter/dotfiles
 dotfiles_repo: ingorichter/dotfiles
 dotfiles_dir: "{{ ansible_user_dir }}/.dotfiles"
+
+# Where to drop the downloaded installer.
+cargo_tmp: "{{ lookup('env', 'TMPDIR') }}"
 cargo_bin: "{{ ansible_user_dir }}/.cargo/bin"
+cargo_prefix: "{{ ansible_user_dir }}/.cargo"
 
 homebrew_taps:
   - homebrew/core
@@ -17,23 +21,31 @@ homebrew_taps:
 
 homebrew_installed_packages:
   - bat
+  - curl
   - curlie
   - diff-so-fancy
   - fdupes
   - fzf
+  - gnupg
   - go
-  - gpg
-  - hugo
   - htop
+  - hugo
   - jq
+  - muesli/tap/duf
+  - n
   - newsboat
   - ocrmypdf
   - pdfgrep
+  - pinentry-mac
+  - pyenv-virtualenv
   - rbenv
   - rg
-  - pyenv-virtualenv
+  - rs/tap/curlie
   - rustup-init
   - shellcheck
+  - smartmontools
+  - svn
+  - teamookla/speedtest/speedtest
   - tmux
   - tree
   - yubikey-personalization
@@ -51,14 +63,16 @@ homebrew_cask_apps:
   - bitwarden
   - double-commander
   - emacs
-  - font-consolas-for-powerline
-  - font-fira-code
   - grammarly
+  - handbrake
+  - hazel
   - keybase
   - keycastr
   - libreoffice
   - licecap
   - mactex
+  - makemkv
+  - monitorcontrol
   - nextcloud
   - ngrok
   - nordvpn
@@ -79,6 +93,7 @@ homebrew_cask_apps:
   - veracrypt
   - visual-studio-code-insiders
   - vivaldi
+  - vlc
   - vmware-fusion
   - webstorm
   - webtorrent
@@ -89,11 +104,10 @@ mas_installed_apps:
   - { id: 411643860, name: "DaisyDisk" }
   - { id: 1470584107, name: "Dato" }
   - { id: 1176895641, name: "Spark" }
-
-cargo_prefix: "{{ ansible_user_dir }}/.cargo"
-
-# Where to drop the downloaded installer.
-cargo_tmp: "{{ lookup('env', 'TMPDIR') }}"
+  - { id: 409183694, name: "Keynote" }
+  - { id: 409203825, name: "Numbers" }
+  - { id: 409201541, name: "Pages" }
+  - { id: 409201541, name: "Xcode" }
 
 pip_packages:
   - name: powerline-shell

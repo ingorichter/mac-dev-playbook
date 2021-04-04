@@ -8,6 +8,12 @@
   tags:
   - extras
 
+
+- name: Install Fonts
+  import_tasks: fonts.yml
+  tags:
+  - fonts
+
 - name: Install tmux plugin manager
   import_tasks: tmux-plugin-manager.yml
   tags:

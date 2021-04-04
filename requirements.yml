@@ -1,5 +1,9 @@
 ---
+roles:
 - name: geerlingguy.homebrew
 - name: geerlingguy.mas
 - name: robertdebock.cargo
 - name: gantsign.oh-my-zsh
+
+collections:
+- name: community.general

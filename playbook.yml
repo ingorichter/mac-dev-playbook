@@ -3,11 +3,12 @@
   connection: local
 
   vars_files:
-  - default.config.yml
+    - default.config.yml
 
   roles:
-    - geerlingguy.homebrew
-    - geerlingguy.mas
-    - robertdebock.cargo
-    - gantsign.oh-my-zsh
-    - private
+    - role: elliotweiser.osx-command-line-tools
+    - role: geerlingguy.mac.homebrew
+    - role: geerlingguy.mac.mas
+    - role: robertdebock.cargo
+    - role: gantsign.oh-my-zsh
+    - role: private

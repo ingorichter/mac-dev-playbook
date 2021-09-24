@@ -7,8 +7,9 @@ set -euo pipefail
 xcode-select --install
 
 # install pip
-sudo easy_install pip
-sudo pip install ansible
+# sudo easy_install pip
+sudo pip3 install --upgrade pip
+sudo -H pip3 install ansible
 
 # check out ansible scripts into local directory
 mkdir -p ~/ansible-setup && cd ~/ansible-setup

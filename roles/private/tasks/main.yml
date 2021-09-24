@@ -1,20 +1,24 @@
 - name: Clone dotfiles
   import_tasks: dotfiles.yml
   tags:
-  - dotfiles
+    - dotfiles
 
 - name: Install Extras
   import_tasks: extras.yml
   tags:
-  - extras
-
+    - extras
 
 - name: Install Fonts
   import_tasks: fonts.yml
   tags:
-  - fonts
+    - fonts
 
 - name: Install tmux plugin manager
   import_tasks: tmux-plugin-manager.yml
   tags:
-  - tmpm
+    - tmpm
+
+- name: Install latest nodejs version
+  import_tasks: nodejs.yml
+  tags:
+    - nodejs

@@ -1,0 +1,5 @@
+- name: Install latest nodejs
+  shell: "n latest"
+
+- name: Install git-split-diffs
+  shell: npm install -g git-split-diffs

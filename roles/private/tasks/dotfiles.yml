@@ -12,4 +12,4 @@
 
 - name: Init dotfiles from repo
   when: df.stat.exists == false
-  shell: dot init {{ dotfiles_repo }}
+  shell: "{{ cargo_bin }}/dot init {{ dotfiles_repo }}"

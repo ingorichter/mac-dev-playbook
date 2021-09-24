@@ -1,10 +1,13 @@
 ---
-download: ~/.ansible-downloads
+downloads: ~/.ansible-downloads
+ansible_python_interpreter: /usr/bin/python3
 
-configure_dotfiles: yes
+configure_dotfiles: true
 
 # https://github.com/ingorichter/dotfiles
-dotfiles_repo: ingorichter/dotfiles
+dotfiles_repo: https://github.com/ingorichter/dotfiles.git
+dotfiles_repo_version: master
+dotfiles_repo_local_destination: "{{ ansible_user_dir }}/.dotfiles"
 dotfiles_dir: "{{ ansible_user_dir }}/.dotfiles"
 
 # Where to drop the downloaded installer.
@@ -24,15 +27,19 @@ homebrew_installed_packages:
   - curl
   - curlie
   - diff-so-fancy
+  - fd
   - fdupes
   - fzf
+  - gitui
   - gnupg
   - go
   - htop
   - hugo
   - jq
+  - julia
   - muesli/tap/duf
   - n
+  - nim
   - newsboat
   - ocrmypdf
   - pdfgrep
@@ -52,15 +59,16 @@ homebrew_installed_packages:
   - zplug
   - zsh
 
-homebrew_cask_appdir: /Applications
+# homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  - 1password6
+  # - 1password6
   - adobe-creative-cloud
   - aerial
   - alacritty
   - alfred
   - alt-tab
   - bitwarden
+  - blender
   - double-commander
   - emacs
   - grammarly
@@ -78,6 +86,7 @@ homebrew_cask_apps:
   - nordvpn
   - openscad
   - osxfuse
+  - processing
   - prusaslicer
   - rectangle
   - signal
@@ -91,7 +100,7 @@ homebrew_cask_apps:
   - synology-drive
   - telegram-desktop
   - veracrypt
-  - visual-studio-code-insiders
+  - visual-studio-code
   - vivaldi
   - vlc
   - vmware-fusion

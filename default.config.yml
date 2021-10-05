@@ -24,6 +24,7 @@ homebrew_taps:
 
 homebrew_installed_packages:
   - bat
+  - crystal
   - curl
   - curlie
   - diff-so-fancy
@@ -74,6 +75,7 @@ homebrew_cask_apps:
   - grammarly
   - handbrake
   - hazel
+  - inkscape
   - keybase
   - keycastr
   - libreoffice

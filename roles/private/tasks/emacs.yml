@@ -1,0 +1,6 @@
+- name: Clone rational-emacs repo
+  git:
+    repo: https://github.com/ingorichter/rational-emacs.git
+    dest: ~/.emacs.d/
+
+# ln -s /usr/local/opt/emacs-plus@28/Emacs.app /Applications

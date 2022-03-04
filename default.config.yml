@@ -21,6 +21,7 @@ homebrew_taps:
   - homebrew/cask-fonts
   - homebrew/cask-drivers
   - rs/tap
+  - d12frosted/emacs-plus
 
 homebrew_installed_packages:
   - bat
@@ -71,7 +72,6 @@ homebrew_cask_apps:
   - bitwarden
   - blender
   - double-commander
-  - emacs
   - grammarly
   - handbrake
   - hazel
@@ -112,13 +112,16 @@ homebrew_cask_apps:
 mas_email: ""
 mas_password: ""
 mas_installed_apps:
+  - { id: 640199958, name: "Developer" }
   - { id: 411643860, name: "DaisyDisk" }
-  - { id: 1470584107, name: "Dato" }
-  - { id: 1176895641, name: "Spark" }
-  - { id: 409183694, name: "Keynote" }
   - { id: 409203825, name: "Numbers" }
-  - { id: 409201541, name: "Pages" }
   - { id: 409201541, name: "Xcode" }
+  - { id: 409201541, name: "Pages" }
+  - { id: 409183694, name: "Keynote" }
+  - { id: 1496833156, name: "Playgrounds" }
+  - { id: 1470584107, name: "Dato" }
+  - { id: 1258939760, name: "LispPad" }
+  - { id: 1176895641, name: "Spark" }
 
 pip_packages:
   - name: powerline-shell

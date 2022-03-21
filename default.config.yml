@@ -52,7 +52,6 @@ homebrew_installed_packages:
   - rs/tap/curlie
   - rustup-init
   - shellcheck
-  - smartmontools
   - svn
   - teamookla/speedtest/speedtest
   - tmux
@@ -77,9 +76,9 @@ homebrew_cask_apps:
   - hazel
   - inkscape
   - keybase
-  - keycastr
   - libreoffice
   - licecap
+  - macfuse
   - mactex
   - makemkv
   - monitorcontrol
@@ -87,17 +86,14 @@ homebrew_cask_apps:
   - ngrok
   - nordvpn
   - openscad
-  - osxfuse
   - processing
   - prusaslicer
   - rectangle
   - signal
-  - skype
   - sonos
   - sourcetree
   - spotify
   - superduper
-  - superproductivity
   - suspicious-package
   - synology-drive
   - telegram-desktop
@@ -105,9 +101,7 @@ homebrew_cask_apps:
   - visual-studio-code
   - vivaldi
   - vlc
-  - vmware-fusion
   - webstorm
-  - webtorrent
 
 mas_email: ""
 mas_password: ""

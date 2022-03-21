@@ -3,4 +3,14 @@
     repo: https://github.com/ingorichter/rational-emacs.git
     dest: ~/.emacs.d/
 
-# ln -s /usr/local/opt/emacs-plus@28/Emacs.app /Applications
+- name: Install emacs-plus Cask with options
+  community.general.homebrew:
+    name: emacs-plus@28
+    state: present
+    install_options: 'with-mailutils,with-imagemagick'
+
+- name: Link Emacs Binary into /Applications
+  ansible.builtin.file:
+    src: /usr/local/opt/emacs-plus@28/Emacs.app
+    dest: /Applications/Emacs.app
+    state: link

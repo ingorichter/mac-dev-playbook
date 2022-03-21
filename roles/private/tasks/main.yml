@@ -27,3 +27,8 @@
   import_tasks: nodejs.yml
   tags:
     - nodejs
+
+- name: Configure macOS defaults
+  import_tasks: macos.yml
+  tags:
+    - macos

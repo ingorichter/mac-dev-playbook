@@ -10,6 +10,8 @@ dotfiles_repo_version: master
 dotfiles_repo_local_destination: "{{ ansible_user_dir }}/.dotfiles"
 dotfiles_dir: "{{ ansible_user_dir }}/.dotfiles"
 
+macos_config_script: "{{ dotfiles_dir }}/macos/system-config.sh"
+
 # Where to drop the downloaded installer.
 cargo_tmp: "{{ lookup('env', 'TMPDIR') }}"
 cargo_bin: "{{ ansible_user_dir }}/.cargo/bin"

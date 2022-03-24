@@ -26,6 +26,7 @@ homebrew_taps:
   - d12frosted/emacs-plus
 
 homebrew_installed_packages:
+  - asciidoctor
   - bat
   - crystal
   - curl
@@ -43,8 +44,8 @@ homebrew_installed_packages:
   - julia
   - muesli/tap/duf
   - n
-  - nim
   - newsboat
+  - nim
   - ocrmypdf
   - pdfgrep
   - pinentry-mac
@@ -91,6 +92,7 @@ homebrew_cask_apps:
   - processing
   - prusaslicer
   - rectangle
+  - remarkable
   - signal
   - sonos
   - sourcetree
@@ -122,6 +124,7 @@ mas_installed_apps:
 pip_packages:
   - name: powerline-shell
     state: present
+    executable: pip3
 
 oh_my_zsh_install: yes
 users:

@@ -11,6 +11,6 @@
 
 - name: Link Emacs Binary into /Applications
   ansible.builtin.file:
-    src: /usr/local/opt/emacs-plus@28/Emacs.app
+    src: "{{ homebrew_prefix }}/opt/emacs-plus@28/Emacs.app"
     dest: /Applications/Emacs.app
     state: link

@@ -1,5 +1,5 @@
 - name: Install latest nodejs
-  shell: "export N_PREFIX=~/n && n latest"
+  shell: "n latest"
 
 - name: Install git-split-diffs
-  shell: "export PATH=$PATH:$N_PREFIX/bin && npm install -g git-split-diffs"
+  shell: "export PATH=${PATH}:${N_PREFIX}/bin && npm install -g git-split-diffs"

@@ -10,7 +10,7 @@ dotfiles_repo_version: master
 dotfiles_repo_local_destination: "{{ ansible_user_dir }}/.dotfiles"
 dotfiles_dir: "{{ ansible_user_dir }}/.dotfiles"
 
-macos_config_script: "{{ dotfiles_dir }}/macos/system-config.sh"
+macos_config_script: "{{ dotfiles_dir }}/macos/system-config.sh --no-restart"
 
 # Where to drop the downloaded installer.
 cargo_tmp: "{{ lookup('env', 'TMPDIR') }}"
@@ -41,7 +41,8 @@ homebrew_installed_packages:
   - htop
   - hugo
   - jq
-  - julia
+#  - julia
+  - mas
   - muesli/tap/duf
   - n
   - newsboat

@@ -32,6 +32,7 @@ homebrew_installed_packages:
   - curl
   - curlie
   - diff-so-fancy
+  - exiftool
   - fd
   - fdupes
   - fzf

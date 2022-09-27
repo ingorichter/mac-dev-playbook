@@ -1,0 +1,38 @@
+---
+downloads: ~/.ansible-downloads
+ansible_python_interpreter: /usr/bin/python3
+
+configure_dotfiles: true
+
+# https://github.com/ingorichter/dotfiles
+dotfiles_repo: https://github.com/ingorichter/dotfiles.git
+dotfiles_repo_version: master
+dotfiles_repo_local_destination: "{{ ansible_user_dir }}/.dotfiles"
+dotfiles_dir: "{{ ansible_user_dir }}/.dotfiles"
+
+macos_config_script: "{{ dotfiles_dir }}/macos/system-config.sh --no-restart"
+
+# Where to drop the downloaded installer.
+cargo_tmp: "{{ ansible_env.TMPDIR }}"
+cargo_bin: "{{ ansible_user_dir }}/.cargo/bin"
+cargo_prefix: "{{ ansible_user_dir }}/.cargo"
+
+homebrew_prefix: "{{ (ansible_machine == 'arm64') | ternary('/opt/homebrew', '/usr/local') }}"
+homebrew_upgrade_all_packages: true
+homebrew_user: ingorichter
+homebrew_taps:
+  - homebrew/core
+  - homebrew/cask
+  - homebrew/cask-fonts
+  - homebrew/cask-drivers
+  - rs/tap
+  - d12frosted/emacs-plus
+
+pip_packages:
+  - name: powerline-shell
+    state: present
+    executable: pip3
+
+oh_my_zsh_install: yes
+users:
+  - username: ingorichter

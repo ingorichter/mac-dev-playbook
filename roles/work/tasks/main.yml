@@ -1,0 +1,18 @@
+- name: Install cargo
+  include_role:
+    name: robertdebock.cargo
+
+- name: Install Fonts
+  become: false
+  community.general.homebrew_cask:
+    name:
+      - font-3270
+      - font-3270-nerd-font
+      - font-consolas-for-powerline
+      - font-digital-numbers
+      - font-fira-code
+      - font-fira-mono-for-powerline
+      - font-fira-mono-for-powerline
+      - font-jetbrains-mono
+
+    state: present

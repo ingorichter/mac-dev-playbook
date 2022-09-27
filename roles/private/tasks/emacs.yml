@@ -7,7 +7,7 @@
   community.general.homebrew:
     name: emacs-plus@28
     state: present
-    install_options: 'with-mailutils,with-imagemagick'
+    install_options: 'with-native-comp,with-mailutils,with-imagemagick'
 
 - name: Link Emacs Binary into /Applications
   ansible.builtin.file:

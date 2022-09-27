@@ -13,10 +13,11 @@ dotfiles_dir: "{{ ansible_user_dir }}/.dotfiles"
 macos_config_script: "{{ dotfiles_dir }}/macos/system-config.sh --no-restart"
 
 # Where to drop the downloaded installer.
-cargo_tmp: "{{ lookup('env', 'TMPDIR') }}"
+cargo_tmp: "{{ ansible_env.TMPDIR }}"
 cargo_bin: "{{ ansible_user_dir }}/.cargo/bin"
 cargo_prefix: "{{ ansible_user_dir }}/.cargo"
 
+homebrew_user: ingorichter
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
@@ -41,11 +42,9 @@ homebrew_installed_packages:
   - htop
   - hugo
   - jq
-#  - julia
   - mas
   - muesli/tap/duf
   - n
-  - newsboat
   - nim
   - ocrmypdf
   - pdfgrep
@@ -73,41 +72,32 @@ homebrew_cask_apps:
   - alfred
   - alt-tab
   - bitwarden
-  - blender
   - double-commander
   - grammarly
-  - handbrake
   - hazel
-  - inkscape
   - keybase
   - libreoffice
   - licecap
   - macfuse
   - mactex
-  - makemkv
-  - monitorcontrol
   - nextcloud
   - ngrok
   - nordvpn
-  - openscad
-  - processing
-  - prusaslicer
   - rectangle
   - remarkable
   - signal
-  - sonos
   - sourcetree
   - spotify
   - superduper
   - suspicious-package
   - synology-drive
-  - telegram-desktop
-  - veracrypt
+  # - veracrypt
   - visual-studio-code
   - vivaldi
   - vlc
   - webstorm
 
+# mas_upgrade_all_apps: true
 mas_email: ""
 mas_password: ""
 mas_installed_apps:
@@ -120,13 +110,3 @@ mas_installed_apps:
   - { id: 1496833156, name: "Playgrounds" }
   - { id: 1470584107, name: "Dato" }
   - { id: 1258939760, name: "LispPad" }
-  - { id: 1176895641, name: "Spark" }
-
-pip_packages:
-  - name: powerline-shell
-    state: present
-    executable: pip3
-
-oh_my_zsh_install: yes
-users:
-  - username: ingorichter

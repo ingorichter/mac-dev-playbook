@@ -1,3 +1,5 @@
-[all]
-127.0.0.1 ansible_connection=local
+[personal]
+127.0.0.1   ansible_connection=local
 
+[work]
+Ingos-Adobe-MB-Pro.local    ansible_connection=ssh  ansible_user=ingorichter    ansible_python_interpreter=/usr/bin/python3

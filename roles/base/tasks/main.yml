@@ -1,0 +1,33 @@
+# essential base tasks for all machines
+- name: print os version
+  debug:
+    msg: "System version is {{ ansible_distribution_version }}"
+  when:
+    - ansible_distribution_version is version('12', '<')
+
+# - name: install rosetta on M1
+#   ansible.builtin.command: yes A | softwareupdate --install-rosetta
+#   when:
+#     - ansible_machine == 'arm64'
+
+- name: install osx command line tools
+  include_role:
+    name: elliotweiser.osx-command-line-tools
+
+- name: print homebrew user
+  debug:
+    msg: "Homebrew user {{ homebrew_user }}"
+
+- name: install homebrew
+  include_role:
+    name: geerlingguy.mac.homebrew
+
+# - name: install mas
+#   include_role:
+#     name: geerlingguy.mac.mas
+
+  # environment:
+  #   PATH: '{{ ansible_env.PATH }}:{{ homebrew_brew_bin_path }}'
+- name: install oh-my-zsh
+  include_role:
+    name: gantsign.oh-my-zsh

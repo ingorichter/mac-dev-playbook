@@ -1,5 +1,16 @@
+- name: npm self-update
+  environment:
+    N_PREFIX: "{{ ansible_user_dir }}/n"
+    PATH: "{{ ansible_env.PATH }}:{{ ansible_user_dir }}/n/bin"
+  shell: "npm install -g npm@latest"
+
 - name: Install latest nodejs
-  shell: "n latest"
+  environment:
+    N_PREFIX: "{{ ansible_user_dir }}/n"
+  shell: "{{ homebrew_prefix }}/bin/n latest"
 
 - name: Install git-split-diffs
-  shell: "export PATH=${PATH}:${N_PREFIX}/bin && npm install -g git-split-diffs"
+  environment:
+    N_PREFIX: "{{ ansible_user_dir }}/n"
+    PATH: "{{ ansible_env.PATH }}:{{ ansible_user_dir }}/n/bin"
+  shell: "npm install -g git-split-diffs"

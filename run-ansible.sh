@@ -11,3 +11,6 @@ export PATH="/opt/homebrew/bin:${PATH}"
 
 #  Example to start at specific task
 # ansible-playbook -i inventory --ask-become-pass playbook.yml --start-at-task "Check if dot tool is already installed" -v
+# the next line will avoid the sudo problem
+# https://www.shellhacks.com/ansible-sudo-a-password-is-required/
+# ansible-playbook  playbook.yml -l work --ask-become-pass -e "ansible_become_password=t**a"

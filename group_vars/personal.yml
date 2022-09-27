@@ -1,0 +1,125 @@
+---
+downloads: ~/.ansible-downloads
+ansible_python_interpreter: /usr/bin/python3
+
+configure_dotfiles: true
+
+# https://github.com/ingorichter/dotfiles
+dotfiles_repo: https://github.com/ingorichter/dotfiles.git
+dotfiles_repo_version: master
+dotfiles_repo_local_destination: "{{ ansible_user_dir }}/.dotfiles"
+dotfiles_dir: "{{ ansible_user_dir }}/.dotfiles"
+
+macos_config_script: "{{ dotfiles_dir }}/macos/system-config.sh --no-restart"
+
+# Where to drop the downloaded installer.
+cargo_tmp: "{{ ansible_env.TMPDIR }}"
+cargo_bin: "{{ ansible_user_dir }}/.cargo/bin"
+cargo_prefix: "{{ ansible_user_dir }}/.cargo"
+
+homebrew_user: ingorichter
+homebrew_taps:
+  - homebrew/core
+  - homebrew/cask
+  - homebrew/cask-fonts
+  - homebrew/cask-drivers
+  - rs/tap
+  - d12frosted/emacs-plus
+
+homebrew_installed_packages:
+  - asciidoctor
+  - bat
+  - crystal
+  - curl
+  - curlie
+  - diff-so-fancy
+  - fd
+  - fdupes
+  - fzf
+  - gitui
+  - gnupg
+  - go
+  - hledger
+  - htop
+  - hugo
+  - jq
+  - julia
+  - mas
+  - muesli/tap/duf
+  - n
+  - newsboat
+  - nim
+  - ocrmypdf
+  - pdfgrep
+  - pinentry-mac
+  - pyenv-virtualenv
+  - rbenv
+  - rg
+  - rs/tap/curlie
+  - rustup-init
+  - shellcheck
+  - svn
+  - teamookla/speedtest/speedtest
+  - tmux
+  - tree
+  - yubikey-personalization
+  - zplug
+  - zsh
+
+# homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  # - 1password6
+  - adobe-creative-cloud
+  - aerial
+  - alacritty
+  - alfred
+  - alt-tab
+  - bitwarden
+  - blender
+  - double-commander
+  - grammarly
+  - handbrake
+  - hazel
+  - inkscape
+  - keybase
+  - libreoffice
+  - licecap
+  - macfuse
+  - mactex
+  - makemkv
+  - monitorcontrol
+  - nextcloud
+  - ngrok
+  - nordvpn
+  - openscad
+  - processing
+  - prusaslicer
+  - rectangle
+  - remarkable
+  - signal
+  - sonos
+  - sourcetree
+  - spotify
+  - superduper
+  - suspicious-package
+  - synology-drive
+  - telegram-desktop
+  - veracrypt
+  - visual-studio-code
+  - vivaldi
+  - vlc
+  - webstorm
+
+mas_email: ""
+mas_password: ""
+mas_installed_apps:
+  - { id: 640199958, name: "Developer" }
+  - { id: 411643860, name: "DaisyDisk" }
+  - { id: 409203825, name: "Numbers" }
+  - { id: 409201541, name: "Xcode" }
+  - { id: 409201541, name: "Pages" }
+  - { id: 409183694, name: "Keynote" }
+  - { id: 1496833156, name: "Playgrounds" }
+  - { id: 1470584107, name: "Dato" }
+  - { id: 1258939760, name: "LispPad" }
+  - { id: 1176895641, name: "Spark" }

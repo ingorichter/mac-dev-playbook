@@ -1,7 +1,8 @@
-- name: Install Rational Emacs
-  import_tasks: emacs.yml
-  tags:
-    - emacs
+# Todo(Ingo): I was unable to remote install this on my new machine => disable for now
+# - name: Install Rational Emacs
+#   import_tasks: emacs.yml
+#   tags:
+#     - emacs
 
 - name: Clone dotfiles
   import_tasks: dotfiles.yml

@@ -1,14 +1,24 @@
 ---
 - hosts: all
-  connection: local
-
+  become: true
   vars_files:
-    - default.config.yml
-
+    - base.config.yml
   roles:
-    - role: elliotweiser.osx-command-line-tools
-    - role: geerlingguy.mac.homebrew
-    - role: geerlingguy.mac.mas
-    - role: robertdebock.cargo
-    - role: gantsign.oh-my-zsh
-    - role: private
+    - base
+
+- hosts: work
+  # become_user: ingorichter
+  become: false
+  vars_files:
+    - base.config.yml
+  roles:
+    - work
+    - private
+
+- hosts: personal
+  become: false
+  vars_files:
+    - base.config.yml
+  roles:
+    - personal
+    - private

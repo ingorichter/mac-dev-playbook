@@ -1,3 +1,8 @@
+- name: pip self-update
+  pip:
+    name: pip
+    state: latest
+
 - name: Install global Pip packages
   pip:
     name: "{{ item.name | default(item) }}"

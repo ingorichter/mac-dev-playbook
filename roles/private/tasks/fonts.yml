@@ -11,3 +11,23 @@
       - font-3270
 
     state: present
+
+- name: Install MesloLGS Regular Font for p10k
+  ansible.builtin.get_url:
+    url: https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
+    dest: "{{ ansible_user_dir }}/Library/Fonts/MesloLGS NF Regular.ttf"
+
+- name: Install MesloLGS Bold Font for p10k
+  ansible.builtin.get_url:
+    url: https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf
+    dest: "{{ ansible_user_dir }}/Library/Fonts/MesloLGS NF Bold.ttf"
+
+- name: Install MesloLGS Italic Font for p10k
+  ansible.builtin.get_url:
+    url: https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf
+    dest: "{{ ansible_user_dir }}/Library/Fonts/MesloLGS NF Italic.ttf"
+
+- name: Install MesloLGS Bold Italic Font for p10k
+  ansible.builtin.get_url:
+    url: https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf
+    dest: "{{ ansible_user_dir }}/Library/Fonts/MesloLGS NF Bold Italic.ttf"

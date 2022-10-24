@@ -28,6 +28,7 @@ homebrew_taps:
 
 homebrew_installed_packages:
   - asciidoctor
+  - asdf
   - bat
   - crystal
   - curl

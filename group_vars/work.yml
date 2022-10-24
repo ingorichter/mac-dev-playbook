@@ -29,19 +29,26 @@ homebrew_taps:
 homebrew_installed_packages:
   - asciidoctor
   - bat
+  - bitwarden-cli
   - crystal
   - curl
   - curlie
   - diff-so-fancy
+  - exa
   - fd
   - fdupes
   - fzf
+  - git-delta
+  - git-lfs
   - gitui
   - gnupg
   - go
   - htop
   - hugo
+  - jenkins
   - jq
+  - kondo
+  - libgccjit
   - mas
   - muesli/tap/duf
   - n
@@ -58,6 +65,7 @@ homebrew_installed_packages:
   - svn
   - teamookla/speedtest/speedtest
   - tmux
+  - tokei
   - tree
   - yubikey-personalization
   - zplug
@@ -71,8 +79,11 @@ homebrew_cask_apps:
   - alacritty
   - alfred
   - alt-tab
+  - appcode
   - bitwarden
+  - charles
   - double-commander
+  - firefox
   - grammarly
   - hazel
   - keybase
@@ -86,6 +97,7 @@ homebrew_cask_apps:
   - rectangle
   - remarkable
   - signal
+  - slack
   - sourcetree
   - spotify
   - superduper

@@ -10,3 +10,6 @@
     version: "{{ item.version | default(omit) }}"
     executable: "{{ item.executable | default(omit) }}"
   with_items: "{{ pip_packages }}"
+
+- name: Install difftastic
+  shell: "{{ cargo_bin }}/cargo install difftastic"

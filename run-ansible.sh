@@ -14,3 +14,4 @@ export PATH="/opt/homebrew/bin:${PATH}"
 # the next line will avoid the sudo problem
 # https://www.shellhacks.com/ansible-sudo-a-password-is-required/
 # ansible-playbook  playbook.yml -l work --ask-become-pass -e "ansible_become_password=t**a"
+# ansible-playbook playbook.yml -l work --ask-become-pass -e "ansible_become_password=t***a" --start-at-task="Clone dotfiles"

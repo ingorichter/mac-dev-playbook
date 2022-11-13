@@ -38,6 +38,9 @@ homebrew_installed_packages:
   - fd
   - fdupes
   - fzf
+  - git-delta
+  - git-extras
+  - git-lfs
   - gitui
   - gnupg
   - go
@@ -84,6 +87,7 @@ homebrew_cask_apps:
   - hazel
   - inkscape
   - keybase
+  - lcov
   - libreoffice
   - licecap
   - macfuse
@@ -104,6 +108,7 @@ homebrew_cask_apps:
   - spotify
   - superduper
   - suspicious-package
+  - swiftlint
   - synology-drive
   - telegram-desktop
   - veracrypt

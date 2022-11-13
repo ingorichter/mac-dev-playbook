@@ -102,6 +102,7 @@ homebrew_cask_apps:
   - spotify
   - superduper
   - suspicious-package
+  - swiftlint
   - synology-drive
   # - veracrypt
   - visual-studio-code

@@ -15,7 +15,9 @@
     - work
     - private
 
-- hosts: personal
+- hosts:
+    - personal
+    - hackintosh
   become: false
   vars_files:
     - base.config.yml

@@ -3,3 +3,6 @@
 
 [work]
 Ingos-Adobe-MB-Pro.local    ansible_connection=ssh  ansible_user=ingorichter    ansible_python_interpreter=/usr/bin/python3
+
+[hackintosh]
+Ingos-HackMac.local    ansible_connection=ssh  ansible_user=ingorichter    ansible_python_interpreter=/usr/bin/python3

@@ -30,6 +30,7 @@ homebrew_installed_packages:
   - asciidoctor
   - asdf
   - bat
+  - bitwarden-cli
   - crystal
   - curl
   - curlie

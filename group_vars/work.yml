@@ -39,6 +39,7 @@ homebrew_installed_packages:
   - fdupes
   - fzf
   - git-delta
+  - git-extras
   - git-lfs
   - gitui
   - gnupg

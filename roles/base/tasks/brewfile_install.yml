@@ -1,0 +1,27 @@
+- name: Check for Homebrew
+  ansible.builtin.command:
+    cmd: "brew --version"
+  register: homebrew_check
+  failed_when: false
+  changed_when: false
+
+- name: Display Homebrew status
+  ansible.builtin.debug:
+    msg: "Homebrew is installed on {{ inventory_hostname }}."
+  when: homebrew_check.rc == 0
+
+- name: Display Homebrew status
+  ansible.builtin.debug:
+    msg: "Homebrew is not installed on {{ inventory_hostname }}."
+  when: homebrew_check.rc != 0
+
+- name: Copy the Brewfile to the target host
+  ansible.builtin.copy:
+    src: "brewfiles/{{ inventory_hostname }}"
+    dest: "/tmp/Brewfile"
+    mode: 0644
+
+- name: Install packages from the Brewfile
+  ansible.builtin.command:
+    cmd: "brew bundle install --file=/tmp/Brewfile"
+    warn: no

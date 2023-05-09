@@ -1,0 +1,234 @@
+tap "d12frosted/emacs-plus"
+tap "hashicorp/tap"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-drivers"
+tap "homebrew/cask-fonts"
+tap "homebrew/core"
+tap "homebrew/services"
+tap "ingorichter/iosevka-comfy"
+tap "julien040/gut"
+tap "muesli/tap"
+tap "rs/tap"
+tap "teamookla/speedtest"
+tap "terrastruct/d2"
+# Text processor and publishing toolchain for AsciiDoc
+brew "asciidoctor"
+# Extendable version manager with support for Ruby, Node.js, Erlang & more
+brew "asdf"
+# Bourne-Again SHell, a UNIX command interpreter
+brew "bash"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
+# Secure and free password manager for all of your devices
+brew "bitwarden-cli"
+# Fast and statically typed, compiled language with Ruby-like syntax
+brew "crystal"
+# Get a file from an HTTP, HTTPS or FTP server
+brew "curl"
+# Power of curl, ease of use of httpie
+brew "curlie"
+# Modern diagram scripting language that turns text to diagrams
+brew "d2"
+# Good-lookin' diffs with diff-highlight and more
+brew "diff-so-fancy"
+# Modern replacement for 'ls'
+brew "exa"
+# Simple, fast and user-friendly alternative to find
+brew "fd"
+# Identify or delete duplicate files
+brew "fdupes"
+# GNU Transport Layer Security (TLS) Library
+brew "gnutls"
+# Utility to determine file types
+brew "file-formula"
+# Fast and simple Node.js version manager
+brew "fnm"
+# Command-line fuzzy finder written in Go
+brew "fzf"
+# Distributed revision control system
+brew "git"
+# Syntax-highlighting pager for git and diff output
+brew "git-delta"
+# Small git utilities
+brew "git-extras"
+# Git extension for versioning large files
+brew "git-lfs"
+# Blazing fast terminal-ui for git written in rust
+brew "gitui"
+# Passphrase entry dialog utilizing the Assuan protocol
+brew "pinentry"
+# GNU Pretty Good Privacy (PGP) package
+brew "gnupg"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
+# Library to render SVG files using Cairo
+brew "librsvg"
+# Graph visualization software from AT&T and Bell Labs
+brew "graphviz"
+# Improved top (interactive process viewer)
+brew "htop"
+# Configurable static site generator
+brew "hugo"
+# Tools and libraries to manipulate images in many formats
+brew "imagemagick"
+# Development kit for the Java programming language
+brew "openjdk@17"
+# Extendable open source continuous integration server
+brew "jenkins"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
+# Save disk space by cleaning non-essential files from software projects
+brew "kondo"
+# JIT library for the GNU compiler collection
+brew "libgccjit"
+# Mac App Store command-line interface
+brew "mas"
+# Like sed, awk, cut, join & sort for name-indexed data such as CSV
+brew "miller"
+# Fast, highly customisable system info script
+brew "neofetch"
+# Statically typed compiled systems programming language
+brew "nim"
+# Adds an OCR text layer to scanned PDF files
+brew "ocrmypdf"
+# Development kit for the Java programming language
+brew "openjdk"
+# Search PDFs for strings matching a regular expression
+brew "pdfgrep"
+# Pinentry for GPG on Mac
+brew "pinentry-mac"
+# Pyenv plugin to manage virtualenv
+brew "pyenv-virtualenv"
+# Ruby version manager
+brew "rbenv"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# Rust toolchain installer
+brew "rustup-init"
+# Static analysis and lint tool, for (ba)sh scripts
+brew "shellcheck"
+# Version control system designed to be a better CVS
+brew "subversion"
+# Terminal multiplexer
+brew "tmux"
+# Program that allows you to count code, quickly
+brew "tokei"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
+# YubiKey personalization library and tool
+brew "ykpers"
+# Next-generation plugin manager for zsh
+brew "zplug"
+# UNIX shell (command interpreter)
+brew "zsh"
+brew "d12frosted/emacs-plus/emacs-plus@28", args: ["with-imagemagick", "with-mailutils", "with-native-comp"]
+# Vault
+brew "hashicorp/tap/vault"
+# Gut is an easy to use Git client for the command line.
+brew "julien040/gut/gut"
+# Disk Usage/Free Utility
+brew "muesli/tap/duf"
+# Ookla Speedtest
+brew "teamookla/speedtest/speedtest"
+# Collection of apps and services for photography, design, video, web, and UX
+cask "adobe-creative-cloud", args: { appdir: "/Applications" }
+# Apple TV Aerial screensaver
+cask "aerial", args: { appdir: "/Applications" }
+# GPU-accelerated terminal emulator
+cask "alacritty", args: { appdir: "/Applications" }
+# Application launcher and productivity software
+cask "alfred", args: { appdir: "/Applications" }
+# Enable Windows-like alt-tab
+cask "alt-tab", args: { appdir: "/Applications" }
+# IDE for Swift, Objective-C, C, and C++ development
+cask "appcode"
+# Desktop password and login vault
+cask "bitwarden", args: { appdir: "/Applications" }
+# Web debugging Proxy application
+cask "charles"
+# File manager with two panels
+cask "double-commander", args: { appdir: "/Applications" }
+# Online diagram software
+cask "drawio"
+# Assign keys, and then decorate and label them
+cask "elgato-stream-deck"
+# Status monitoring
+cask "eul"
+cask "font-3270"
+# Developer targeted fonts with a high number of glyphs
+cask "font-3270-nerd-font"
+cask "font-consolas-for-powerline"
+cask "font-digital-numbers"
+# Free monospaced font with programming ligatures
+cask "font-fira-code"
+cask "font-fira-mono-for-powerline"
+# Custom build of Iosevka with different style and metrics than the default
+cask "font-iosevka-comfy"
+# Typeface made for developers
+cask "font-jetbrains-mono"
+# Desktop client for GitHub repositories
+cask "github"
+# Web browser
+cask "google-chrome"
+# Utility to fix grammar errors and style issues in text
+cask "grammarly", args: { appdir: "/Applications" }
+# Automated organization
+cask "hazel", args: { appdir: "/Applications" }
+# End-to-end encryption software
+cask "keybase", args: { appdir: "/Applications" }
+# Office suite
+cask "libreoffice", args: { appdir: "/Applications" }
+# Animated screen capture application
+cask "licecap", args: { appdir: "/Applications" }
+# Provides access to camera controls
+cask "logitech-camera-settings"
+# File system integration
+cask "macfuse"
+# Full TeX Live distribution with GUI applications
+cask "mactex", args: { appdir: "/Applications" }
+# Web browser
+cask "microsoft-edge"
+# Desktop sync client for Nextcloud software products
+cask "nextcloud", args: { appdir: "/Applications" }
+# Reverse proxy, secure introspectable tunnels to localhost
+cask "ngrok", args: { appdir: "/Applications" }
+# VPN client for secure internet access and private browsing
+cask "nordvpn", args: { appdir: "/Applications" }
+# Move and resize windows using keyboard shortcuts or snap areas
+cask "rectangle", args: { appdir: "/Applications" }
+# View, Screen Share, organize, import, and download files to a reMarkable device
+cask "remarkable", args: { appdir: "/Applications" }
+# Instant messaging application focusing on security
+cask "signal", args: { appdir: "/Applications" }
+# Team communication and collaboration software
+cask "slack"
+# Graphical client for Git version control
+cask "sourcetree", args: { appdir: "/Applications" }
+# Music streaming service
+cask "spotify", args: { appdir: "/Applications" }
+# Backup, recovery and cloning software
+cask "superduper", args: { appdir: "/Applications" }
+# Application for inspecting installer packages
+cask "suspicious-package", args: { appdir: "/Applications" }
+# Sync and backup service to Synology NAS drives
+cask "synology-drive", args: { appdir: "/Applications" }
+# Open-source code editor
+cask "visual-studio-code", args: { appdir: "/Applications" }
+# Web browser with built-in email client focusing on customization and control
+cask "vivaldi", args: { appdir: "/Applications" }
+# Multimedia player
+cask "vlc", args: { appdir: "/Applications" }
+# JavaScript IDE
+cask "webstorm", args: { appdir: "/Applications" }
+mas "Bitwarden", id: 1352778147
+mas "Dato", id: 1470584107
+mas "Developer", id: 640199958
+mas "GarageBand", id: 682658836
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Velja", id: 1607635845
+mas "Xcode", id: 497799835
+mas "Xcode", id: 497799835

@@ -22,6 +22,10 @@
   include_role:
     name: geerlingguy.mac.homebrew
 
+- name: Install Brewfiles on multiple hosts
+  become: no
+  import_tasks: brewfile_install.yml
+
 # - name: install mas
 #   include_role:
 #     name: geerlingguy.mac.mas

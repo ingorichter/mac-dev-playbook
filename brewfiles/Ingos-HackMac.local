@@ -1,0 +1,239 @@
+tap "d12frosted/emacs-plus"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-drivers"
+tap "homebrew/cask-fonts"
+tap "homebrew/cask-versions"
+tap "homebrew/core"
+tap "ingorichter/iosevka-comfy"
+tap "muesli/tap"
+tap "rs/tap"
+tap "teamookla/speedtest"
+tap "yurikoles/yurikoles"
+# General-purpose data compression with high compression ratio
+brew "xz"
+# Text processor and publishing toolchain for AsciiDoc
+brew "asciidoctor"
+# Bourne-Again SHell, a UNIX command interpreter
+brew "bash"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
+# Container runtimes on MacOS (and Linux) with minimal setup
+brew "colima"
+# Fast and statically typed, compiled language with Ruby-like syntax
+brew "crystal"
+# Get a file from an HTTP, HTTPS or FTP server
+brew "curl"
+# Power of curl, ease of use of httpie
+brew "curlie"
+# Good-lookin' diffs with diff-highlight and more
+brew "diff-so-fancy"
+# Pack, ship and run any application as a lightweight container
+brew "docker"
+# Isolated development environments using Docker
+brew "docker-compose"
+# Perl lib for reading and writing EXIF metadata
+brew "exiftool"
+# Simple, fast and user-friendly alternative to find
+brew "fd"
+# Identify or delete duplicate files
+brew "fdupes"
+# Utility to determine file types
+brew "file-formula"
+# Fast and simple Node.js version manager
+brew "fnm"
+# Command-line fuzzy finder written in Go
+brew "fzf"
+# Distributed revision control system
+brew "git"
+# Blazing fast terminal-ui for git written in rust
+brew "gitui"
+# GNU Pretty Good Privacy (PGP) package
+brew "gnupg"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
+# Improved top (interactive process viewer)
+brew "htop"
+# Configurable static site generator
+brew "hugo"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
+# Fast, Dynamic Programming Language
+brew "julia"
+# Access DVDs as block devices without the decryption
+brew "libdvdcss"
+# Next-gen compiler infrastructure
+brew "llvm"
+# Mac App Store command-line interface
+brew "mas"
+# Steel Bank Common Lisp system
+brew "sbcl"
+# Computer algebra system
+brew "maxima"
+# Media player based on MPlayer and mplayer2
+brew "mpv"
+# Node version management
+brew "n"
+# RSS/Atom feed reader for text terminals
+brew "newsboat"
+# Statically typed compiled systems programming language
+brew "nim"
+# Port scanning utility for large networks
+brew "nmap"
+# Post-processing for scanned/photocopied books
+brew "unpaper"
+# Adds an OCR text layer to scanned PDF files
+brew "ocrmypdf"
+# Development kit for the Java programming language
+brew "openjdk"
+# Search PDFs for strings matching a regular expression
+brew "pdfgrep"
+# Pinentry for GPG on Mac
+brew "pinentry-mac"
+# Pyenv plugin to manage virtualenv
+brew "pyenv-virtualenv"
+# Ruby version manager
+brew "rbenv"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# Rust toolchain installer
+brew "rustup-init"
+# Static analysis and lint tool, for (ba)sh scripts
+brew "shellcheck"
+# Version control system designed to be a better CVS
+brew "subversion"
+# Terminal multiplexer
+brew "tmux"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
+# YubiKey personalization library and tool
+brew "ykpers"
+# New cd command that helps you navigate faster by learning your habits
+brew "z.lua"
+# Next-generation plugin manager for zsh
+brew "zplug"
+# UNIX shell (command interpreter)
+brew "zsh"
+brew "d12frosted/emacs-plus/emacs-plus@28", args: ["with-imagemagick", "with-mailutils", "with-native-comp"]
+# Disk Usage/Free Utility
+brew "muesli/tap/duf"
+# Ookla Speedtest
+brew "teamookla/speedtest/speedtest"
+# Collection of apps and services for photography, design, video, web, and UX
+cask "adobe-creative-cloud", args: { appdir: "/Applications" }
+# Apple TV Aerial screensaver
+cask "aerial", args: { appdir: "/Applications" }
+# GPU-accelerated terminal emulator
+cask "alacritty", args: { appdir: "/Applications" }
+# Application launcher and productivity software
+cask "alfred", args: { appdir: "/Applications" }
+# Enable Windows-like alt-tab
+cask "alt-tab", args: { appdir: "/Applications" }
+# Tool to flash OS images to SD cards & USB drives
+cask "balenaetcher"
+# Desktop password and login vault
+cask "bitwarden", args: { appdir: "/Applications" }
+# 3D creation suite
+cask "blender", args: { appdir: "/Applications" }
+# Multi-platform client-side cloud file encryption tool
+cask "cryptomator"
+# File manager with two panels
+cask "double-commander", args: { appdir: "/Applications" }
+cask "font-3270"
+# Developer targeted fonts with a high number of glyphs
+cask "font-3270-nerd-font"
+cask "font-consolas-for-powerline"
+cask "font-digital-numbers"
+# Free monospaced font with programming ligatures
+cask "font-fira-code"
+cask "font-fira-mono-for-powerline"
+# Custom build of Iosevka with different style and metrics than the default
+cask "font-iosevka-comfy"
+# Typeface made for developers
+cask "font-jetbrains-mono"
+# 3D parametric modeler
+cask "freecad"
+# Utility to fix grammar errors and style issues in text
+cask "grammarly", args: { appdir: "/Applications" }
+# Open-source video transcoder
+cask "handbrake", args: { appdir: "/Applications" }
+# Automated organization
+cask "hazel", args: { appdir: "/Applications" }
+# iPhone management application
+cask "imazing"
+# Hex editor for reverse engineers
+cask "imhex"
+# Vector graphics editor
+cask "inkscape", args: { appdir: "/Applications" }
+# End-to-end encryption software
+cask "keybase", args: { appdir: "/Applications" }
+# Office suite
+cask "libreoffice", args: { appdir: "/Applications" }
+# Animated screen capture application
+cask "licecap", args: { appdir: "/Applications" }
+# File system integration
+cask "macfuse"
+# Full TeX Live distribution with GUI applications
+cask "mactex", args: { appdir: "/Applications" }
+# Video format converter (transcoder)
+cask "makemkv", args: { appdir: "/Applications" }
+# Manages online multimedia libs of German, Austrian and Swiss public broadcasters
+cask "mediathekview"
+# Tool to control external monitor brightness & volume
+cask "monitorcontrol", args: { appdir: "/Applications" }
+# Desktop sync client for Nextcloud software products
+cask "nextcloud", args: { appdir: "/Applications" }
+# Reverse proxy, secure introspectable tunnels to localhost
+cask "ngrok", args: { appdir: "/Applications" }
+# VPN client for secure internet access and private browsing
+cask "nordvpn", args: { appdir: "/Applications" }
+# Programmable solid 3D CAD modeller
+cask "openscad", args: { appdir: "/Applications" }
+# Flexible software sketchbook and a language for learning how to code
+cask "processing"
+# G-code generator for 3D printers (RepRap, Makerbot, Ultimaker etc.)
+cask "prusaslicer", args: { appdir: "/Applications" }
+# Imaging utility to install operating systems to a microSD card
+cask "raspberry-pi-imager"
+# Move and resize windows using keyboard shortcuts or snap areas
+cask "rectangle", args: { appdir: "/Applications" }
+# View, Screen Share, organize, import, and download files to a reMarkable device
+cask "remarkable", args: { appdir: "/Applications" }
+# Instant messaging application focusing on security
+cask "signal", args: { appdir: "/Applications" }
+# Control your Sonos system
+cask "sonos", args: { appdir: "/Applications" }
+# Graphical client for Git version control
+cask "sourcetree", args: { appdir: "/Applications" }
+# Music streaming service
+cask "spotify", args: { appdir: "/Applications" }
+# Backup, recovery and cloning software
+cask "superduper", args: { appdir: "/Applications" }
+# Application for inspecting installer packages
+cask "suspicious-package", args: { appdir: "/Applications" }
+# Sync and backup service to Synology NAS drives
+cask "synology-drive", args: { appdir: "/Applications" }
+# Desktop client for Telegram messenger
+cask "telegram-desktop", args: { appdir: "/Applications" }
+# Virtual machines UI using QEMU
+cask "utm"
+# Disk encryption software focusing on security based on TrueCrypt
+cask "veracrypt", args: { appdir: "/Applications" }
+# Open-source code editor
+cask "visual-studio-code", args: { appdir: "/Applications" }
+# Web browser with built-in email client focusing on customization and control
+cask "vivaldi", args: { appdir: "/Applications" }
+# Multimedia player
+cask "vlc", args: { appdir: "/Applications" }
+# JavaScript IDE
+cask "webstorm", args: { appdir: "/Applications" }
+mas "DaisyDisk", id: 411643860
+mas "Dato", id: 1470584107
+mas "Developer", id: 640199958
+mas "Keynote", id: 409183694
+mas "LispPad", id: 1258939760
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Playgrounds", id: 1496833156
+mas "Spark", id: 1176895641
+mas "Xcode", id: 497799835

@@ -38,6 +38,7 @@ homebrew_installed_packages:
   - exiftool
   - fd
   - fdupes
+  - fnm
   - fzf
   - git-delta
   - git-extras
